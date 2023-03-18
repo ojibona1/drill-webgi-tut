@@ -1,17 +1,124 @@
 body {
   font-family: sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
+
 #webgi-canvas {
   width: 100%;
   height: 100%;
-  border-radius: 0.5rem;
 }
-#webgi-canvas-container{
-  width: 80vw;
-  height: 80vh;
-  margin: 10vh 10vw;
-  border-radius: 0.5rem;
 
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+#webgi-canvas-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  align-content: center;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav p {
+  margin-left: 50px;
+  font-size: 0.8rem;
+}
+
+nav button {
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  padding: 0 25px;
+  font-size: 0.8rem;
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+.drill {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.section--one p {
+  width: 360px;
+}
+
+.comfort {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.section--two {
+  margin-top: 120px;
+  width: 360px;
+  z-index: -1;
+}
+
+.drill h1 {
+  width: 50%;
+  font-size: 8rem;
+  line-height: 6.5rem;
+}
+
+.custom-bg {
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #EDC663;
+  transform: skew(20deg) rotate(20deg) translateY(35%);
+}
+
+.wood--and--metal {
+  display: flex;
+  height: 40vh;
+  width: 100vw;
+  margin-left: 10%;
+}
+
+.section--three {
+  width: 360px;
+}
+
+footer {
+  height: 300px;
+  background-color: #433E3E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer button {
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.section--one button {
+  padding: 10px;
+  border: none;
+  background-color: #EDC663;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.8rem;
 }
